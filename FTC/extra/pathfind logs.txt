@@ -1,0 +1,5 @@
+v1.0 -> deepseek contant edit
+v2.0 -> i forgor
+v3.0 -> cgpt immediate edit
+v4.0 -> deepseek immediate edit
+v5.0 -> cgpt raw

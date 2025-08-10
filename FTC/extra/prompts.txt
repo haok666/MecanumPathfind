@@ -1,0 +1,26 @@
+write a program for a mecanum drivetrain for a robot which has a pathfind feature and then translates that into a file for the robot to read off. it uses theta star search
+
+-Makes a square field that is 3.6666667m in side length
+-Margin of error no more than 5mm
+-All variables/lists/arrays are in camelCase and functions in under_score
+-Has a easily editable array of obsticals within the program to be changed (all are rectangular, and will be at 90deg to the sides)
+-Priortises speed of the robot over everything else
+-Gives a visualisation of the path the robot will take into a image that is saved to a file
+-the visualisation wull gave a robot has a outline and put some obsticales in the field. make sure there is a clear field outline and obstical outline. also have a clear indicator where the robot is facing at each stage (for your program, just have a 1m by 1m long square that sits in the center of the field, and the robot will go from one corner to the other)
+-Keeps logs of all the movement the robot makes, then translates that to the power each wheel needs (wheel is 80mm in diameter and the motors has a max rps of 2.5)
+-takes into account the image that is attatched in this message
+-takes into account that going certain directions may be faster/slower than others (ie sometimes its faster to turn left, go forward and other times its faster to strafe left to reach the same destination)
+-note that since its a mecanum drivetrain, it can move in any direction. ANY DIRECTION its not limited to 8 direction, it can go theoretically infitite directions without turning
+-The robot measures 40cm by 40cm
+-priositese the time instead of distance travelled (it maybe faster to go one way because it's a straight line and the other path requires a bit of zigzagging, even if the zigzagging path is shorter)
+-prints the rotation of each wheel into a table with rows being each time interval (ie, 00:00 to 00:05) and columns being time interval, FR, FL, BR, BL) which will be fed to the robot
+-ensure code is tested and is actually optimal
+-is optimised so the program dosent take too long to complie/run (no more than 3mins)
+-be as precise as possible (ie if the code takes less than 3 mins, then turn up the resolution, make the uncertainty lower)
+-have some type of smoothing function that ensures the robot does indeed take the shortest path
+-make it so that even if does detecet a collision after smoothing, it just makes the thing less smooth. i need to program to do what it's intended to do, not abort halfway through whatever. 
+-of course, check for collisions. THE ROBOT MUST NOT RUN INTO A WALL AT ANY POINT it must be at least 1cm away from the wall or obsticales at any point 
+-note that if the robot is taken as a circle instead of a square, the pathfind may no longer be optimal
+-take into account the robot's length and width, as the robot is delicate and may not collide into any walls
+-remember the diagonals of the robot may be longer than it's edges, so when checking for collisions, also account for the direction teh robot is facing
+
